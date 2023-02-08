@@ -69,6 +69,7 @@
     padding-top: 2px;
     color: var(--light-grey);
     font-size: 12px;
+    cursor: pointer;
 }
 
 .card__button{
@@ -80,4 +81,23 @@
     font-size: 16px;
     margin-top: 10px;
     color: var(--white);
+    cursor: pointer;
+}
+
+.listed__numbers:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+.listed__numbers-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--light-grey);
+    color: var(--white);
+    height: 45px;
+    width: 45px;
+    padding-top: 2px;
+    font-size: 12px;
+    cursor: pointer;
 }
