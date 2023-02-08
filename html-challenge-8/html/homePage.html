@@ -12,7 +12,8 @@
 </head>
 <body>
     <section class="main__container">
-        <article class="card__container">
+
+        <article class="card__container active">
             <div class="card__image">
                 <img src="/html-challenge-8/images/icon-star.svg" alt="star">
             </div>
@@ -21,15 +22,29 @@
                 <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             </div>
             <section class="card__numbers">
-                <a class="listed__numbers">1</a>
-                <a class="listed__numbers">2</a>
-                <a class="listed__numbers">3</a>
-                <a class="listed__numbers">4</a>
-                <a class="listed__numbers">5</a>
+                <input type="button" class="listed__numbers" value="1"></input>
+                <input type="button" class="listed__numbers" value="2"></input>
+                <input type="button" class="listed__numbers" value="3"></input>
+                <input type="button" class="listed__numbers" value="4"></input>
+                <input type="button" class="listed__numbers" value="5"></input>
             </section>
             <button class="card__button" type="submit">Submit</button>
         </article>
+        
+        <article class="card__container-thank-you disactive">
+            <div class="card__image-thank-you">
+                <img src="/html-challenge-8/images/illustration-thank-you.svg" alt="star">
+            </div>
+            <div class="card__rating">
+            </div>
+            <section class="card__tittle"><h1>Thank you!</h1></section>
+            <div class="card__text-thank-you">
+                <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+            </div>
+        </article>
+
     </section>
-    <script src="../index.js"></script>
+
+    <script src="../javascript/homePage.js"></script>
 </body>
 </html>

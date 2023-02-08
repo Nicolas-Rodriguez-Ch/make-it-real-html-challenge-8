@@ -13,6 +13,12 @@
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
 }
+.disactive {
+    display: none !important;
+}
+.active {
+    display: block ;
+}
 
 .main__container {
     background-color: var(--very-dark-blue);
@@ -27,7 +33,7 @@
     background-color: var(--dark-blue);
     width: 90%;
     border-radius: 15px;
-    padding: 20px;
+    padding: 50px 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -70,6 +76,7 @@
     color: var(--light-grey);
     font-size: 12px;
     cursor: pointer;
+    border: none;
 }
 
 .card__button{
@@ -88,16 +95,48 @@
     background-color: var(--orange);
     color: var(--white);
 }
-.listed__numbers-active {
+.listed__numbers:focus {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.card__button:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.card__container-thank-you{
+    background-color: var(--dark-blue);
+    width: 90%;
+    border-radius: 15px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card__image-thank-you {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__rating {
+    background-color: hsl(213, 12%, 15%);
+    width: 162px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background-color: var(--light-grey);
-    color: var(--white);
-    height: 45px;
-    width: 45px;
-    padding-top: 2px;
-    font-size: 12px;
-    cursor: pointer;
+    color: var(--orange);
+    border-radius: 75px;
+    font-size: 13px;
+}
+.card__text-thank-you {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--light-grey);
+    text-align: center;
 }
